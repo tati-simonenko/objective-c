@@ -19,29 +19,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    NSInteger nsi = 133.1;
+    CGFloat cgf = 44.812313345;
+    
+    NSNumber * numbeI = [[NSNumber alloc]initWithInteger:nsi];
+    NSNumber * numbeF = [[NSNumber alloc]initWithFloat:cgf];
+
+    
+    NSLog(@"возьми с собой %@ евро и %@ долларов", numbeI, numbeF);
+    
     
     Start * adventure = [[Start alloc]init];
     LTnextStep * doubleAdventure = [[LTnextStep alloc]init];
     
     [adventure newAdventure:@"Аргентина"];
-    [doubleAdventure newAdventure];
+    [doubleAdventure newAdventure:@"Japan"];
     
-//    [Start classMethod:@"number"];
-    
-    
-    
-//    NSString * string = [factory makeString:100];
-//    NSLog (@"string %@", string);
-//    
-    
-//    NSString * screen = [factory makeString];
-    
-//    NSString * screenTypeRetina = @"Retina screen";
-//    NSString * screenTypeRegular = @"Regular screen";
-//    
-//    [factory makeScreen:screenTypeRetina];
-//    [factory makeScreen:screenTypeRegular];
-    
+
     
     
     return YES;

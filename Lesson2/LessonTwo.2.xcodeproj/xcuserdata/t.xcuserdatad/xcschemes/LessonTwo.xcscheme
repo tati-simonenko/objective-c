@@ -17,7 +17,7 @@
                BlueprintIdentifier = "131504F11ACC8C50002898FC"
                BuildableName = "LessonTwo.app"
                BlueprintName = "LessonTwo"
-               ReferencedContainer = "container:LessonTwo.xcodeproj">
+               ReferencedContainer = "container:LessonTwo.2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "1315050A1ACC8C51002898FC"
                BuildableName = "LessonTwoTests.xctest"
                BlueprintName = "LessonTwoTests"
-               ReferencedContainer = "container:LessonTwo.xcodeproj">
+               ReferencedContainer = "container:LessonTwo.2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "1315050A1ACC8C51002898FC"
                BuildableName = "LessonTwoTests.xctest"
                BlueprintName = "LessonTwoTests"
-               ReferencedContainer = "container:LessonTwo.xcodeproj">
+               ReferencedContainer = "container:LessonTwo.2.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "131504F11ACC8C50002898FC"
             BuildableName = "LessonTwo.app"
             BlueprintName = "LessonTwo"
-            ReferencedContainer = "container:LessonTwo.xcodeproj">
+            ReferencedContainer = "container:LessonTwo.2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "131504F11ACC8C50002898FC"
             BuildableName = "LessonTwo.app"
             BlueprintName = "LessonTwo"
-            ReferencedContainer = "container:LessonTwo.xcodeproj">
+            ReferencedContainer = "container:LessonTwo.2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,7 +96,7 @@
             BlueprintIdentifier = "131504F11ACC8C50002898FC"
             BuildableName = "LessonTwo.app"
             BlueprintName = "LessonTwo"
-            ReferencedContainer = "container:LessonTwo.xcodeproj">
+            ReferencedContainer = "container:LessonTwo.2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

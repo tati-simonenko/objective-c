@@ -10,7 +10,7 @@
 
 @interface Start : NSObject
 
-- (void) newAdventure;
+- (void) newAdventure : string;
 
 //- (NSString * ) makeString : (NSInteger) i;
 //

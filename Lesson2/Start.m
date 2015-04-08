@@ -10,26 +10,17 @@
 
 @implementation Start
 
-//+ (void) classMethod : (NSString *) string {
-//    NSLog(@"Я метод класса %@", string);
-//}
-//
-//- (void) makeScreen : (NSString *) screen {
-//    
-//    NSLog(@"Aloha %@", screen);
-//    
-//}
 
-- (void) newAdventure {
+- (void) newAdventure : (NSString *) string {
     
-    [self chooseCountry];
+    [self chooseCountry:string];
     [self buyTickets];
     [self beInTime];
     
 }
 
 - (void) chooseCountry : (NSString *) string {
-    NSLog(@"Выбери страну, куда ты хочешь поехать %@", string);
+    NSLog(@"В этот раз удача выпала на эту страну: %@", string);
 }
 
 - (void) buyTickets {
@@ -40,13 +31,6 @@
     NSLog(@"Успей вовремя на самолет");
 }
 
-//-  (NSString * ) makeString : (NSInteger) i {
-//    NSString * string = @"I am a string";
-//    NSString * stringI = [NSString stringWithFormat:@"%li", (long)i];
-//    NSString * stringResult = [NSString stringWithFormat:@"%@ переданное значение %@", string, stringI];
-//    
-//    return stringResult;
-//}
 
 
 @end
