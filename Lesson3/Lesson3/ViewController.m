@@ -21,7 +21,9 @@
     
     NSString * string1 = [string stringByReplacingOccurrencesOfString:@"," withString:@", "];
     
-    NSLog(@"%@", string1);
+    NSArray * array = [[NSArray alloc] initWithObjects:@"one", @"two",@"three", string1, nil];
+    
+    NSLog(@"%@", array);
     
     
     
