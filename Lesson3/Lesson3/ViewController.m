@@ -28,12 +28,14 @@
     NSString * doubleString = [NSString stringWithFormat:@"%f", d];
     NSString * string1 = [doubleString substringWithRange:range];
     
+    NSUInteger * intI = [string length];
+    
     NSLog(@" %@ and %@", doubleString, string1);
     NSLog(@"d %f", d);
     NSLog(@"%@", doubleString);
     
     //    and
-    if ([string isEqualToString:string1] && [string isEqualToString:string1]) {
+    if (intI = !1) {
         NSLog(@"yes");
     }
     
