@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) NSMutableArray * arrayM;
+
 @end
 
 @implementation ViewController
@@ -49,7 +51,7 @@
             
         }
         
-        [arrayM addObject:string];
+        [self.arrayM addObject:string];
         
     }
     
