@@ -18,12 +18,10 @@
     [super viewDidLoad];
     
     NSString * string = @"one,two,three,5";
+    NSArray * arrayFromString = [string componentsSeparatedByString:@","];
     
-    NSString * string1 = [string stringByReplacingOccurrencesOfString:@"," withString:@", "];
     
-    NSArray * array = [[NSArray alloc] initWithObjects:@"one", @"two",@"three", string1, nil];
-    
-    NSLog(@"%@", array);
+    NSLog(@"%@", arrayFromString);
     
     
     
