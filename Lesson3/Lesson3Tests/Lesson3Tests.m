@@ -1,6 +1,6 @@
 //
-//  LessonThreeTests.m
-//  LessonThreeTests
+//  Lesson3Tests.m
+//  Lesson3Tests
 //
 //  Created by T on 09.04.15.
 //  Copyright (c) 2015 T. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface LessonThreeTests : XCTestCase
+@interface Lesson3Tests : XCTestCase
 
 @end
 
-@implementation LessonThreeTests
+@implementation Lesson3Tests
 
 - (void)setUp {
     [super setUp];

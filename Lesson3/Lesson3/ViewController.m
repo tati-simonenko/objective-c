@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  LessonThree
+//  Lesson3
 //
 //  Created by T on 09.04.15.
 //  Copyright (c) 2015 T. All rights reserved.
@@ -17,9 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    NSString * string = @"";
-    
+    NSString * string = @"text";
     
 }
 
