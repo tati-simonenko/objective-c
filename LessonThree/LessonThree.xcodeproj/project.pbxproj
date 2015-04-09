@@ -14,6 +14,7 @@
 		13A5A2F71AD68F75005969E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A5A2F61AD68F75005969E3 /* Images.xcassets */; };
 		13A5A2FA1AD68F75005969E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13A5A2F81AD68F75005969E3 /* LaunchScreen.xib */; };
 		13A5A3061AD68F75005969E3 /* LessonThreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A5A3051AD68F75005969E3 /* LessonThreeTests.m */; };
+		13A5A3141AD69164005969E3 /* LSTclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A5A3131AD69164005969E3 /* LSTclass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		13A5A2FF1AD68F75005969E3 /* LessonThreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LessonThreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A5A3041AD68F75005969E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13A5A3051AD68F75005969E3 /* LessonThreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LessonThreeTests.m; sourceTree = "<group>"; };
+		13A5A3121AD69164005969E3 /* LSTclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTclass.h; sourceTree = "<group>"; };
+		13A5A3131AD69164005969E3 /* LSTclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTclass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		13A5A2DD1AD68F74005969E3 = {
 			isa = PBXGroup;
 			children = (
+				13A5A3121AD69164005969E3 /* LSTclass.h */,
+				13A5A3131AD69164005969E3 /* LSTclass.m */,
 				13A5A2E81AD68F75005969E3 /* LessonThree */,
 				13A5A3021AD68F75005969E3 /* LessonThreeTests */,
 				13A5A2E71AD68F75005969E3 /* Products */,
@@ -221,6 +226,7 @@
 			files = (
 				13A5A2F21AD68F75005969E3 /* ViewController.m in Sources */,
 				13A5A2EF1AD68F75005969E3 /* AppDelegate.m in Sources */,
+				13A5A3141AD69164005969E3 /* LSTclass.m in Sources */,
 				13A5A2EC1AD68F75005969E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
