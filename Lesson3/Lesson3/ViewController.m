@@ -32,6 +32,20 @@
     NSLog(@"d %f", d);
     NSLog(@"%@", doubleString);
     
+    //    and
+    if ([string isEqualToString:string1] && [string isEqualToString:string1]) {
+        NSLog(@"yes");
+    }
+    
+
+    //    or
+    else if ([string isEqual:@"test"] || [string isEqual:@"test"] ) {
+        NSLog(@"no");
+    }
+    
+    else {
+        NSLog(@"nothing");
+    }
     
 }
 
