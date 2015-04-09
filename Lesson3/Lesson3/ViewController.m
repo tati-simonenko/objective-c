@@ -21,72 +21,14 @@
     
     NSString * string = @"one,two,three,5";
     NSArray * arrayFromString = [string componentsSeparatedByString:@","];
-    NSMutableArray * arrayM = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < 3; i++) {
-        
-        NSLog(@"[arrayFromString objectAtIndex:i] %@ " , [arrayFromString objectAtIndex:i]);
-        
-        if ([[arrayFromString objectAtIndex:i] isEqualToString:@"two"]) {
-            NSLog(@"[arrayFromString objectAtIndex:i] %@" , [arrayFromString objectAtIndex:i+1]);
-        }
-        
-    }
+    NSDictionary * dict = [[NSDictionary alloc] initWithObjectsAndKeys:
+                           @"string",@"str1",
+                           @"string2",@"str2",
+                           @"string3",@"str3",
+                           arrayFromString, @"array", nil];
     
-    NSLog(@"%i", arrayFromString.count);
-    
-    
-    for (NSString * string in arrayFromString) {
-        
-        NSLog(@"%@", string);
-        
-    }
-    
-    
-    for (NSString * string in arrayFromString) {
-        
-        if ([string isEqualToString:@"5"]) {
-            
-            NSLog(@"equal %@", string);
-            
-        }
-        
-        [self.arrayM addObject:string];
-        
-    }
-    
-    
-    for (NSString * string in arrayFromString) {
-        
-        if (![string isEqualToString:@"5"]) {
-            
-            [arrayM addObject:string];
-            
-        }
-        
-//        [arrayM addObject:string];
-        
-    }
-    
-    
-    NSLog(@"lets remove object");
-    
-    
-    for (int i = 0; i < 3; i++) {
-        
-        
-        if ([[arrayM objectAtIndex:i] isEqualToString:@"two"]) {
-            
-            [arrayM removeObject:[arrayM objectAtIndex:i]];
-            
-        }
-        
-    }
-    
-    
-    
-    NSLog(@"%@", arrayM);
-    
+    NSLog(@"%@", dict);
     
 }
 
