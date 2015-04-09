@@ -17,10 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString * string = @"text";
-    NSString * string1 = [string substringFromIndex:3];
+    NSString * string = @"randomizer";
     
-    NSLog(@"string %@ string %@", string, string1);
+    
+    double d = 22.9;
+    
+    
+    
+    NSRange range = NSMakeRange(1, 4);
+    NSString * doubleString = [NSString stringWithFormat:@"%f", d];
+    NSString * string1 = [doubleString substringWithRange:range];
+    
+    NSLog(@" %@ and %@", doubleString, string1);
+    NSLog(@"d %f", d);
+    NSLog(@"%@", doubleString);
+    
     
 }
 
