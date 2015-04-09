@@ -17,37 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString * string = @"randomizer";
+    NSString * string = @"one,two,three,5";
+    
+    NSString * string1 = [string stringByReplacingOccurrencesOfString:@"," withString:@", "];
+    
+    NSLog(@"%@", string1);
     
     
-    double d = 22.9;
-    
-    
-    
-    NSRange range = NSMakeRange(1, 4);
-    NSString * doubleString = [NSString stringWithFormat:@"%f", d];
-    NSString * string1 = [doubleString substringWithRange:range];
-    
-    NSUInteger * intI = [string length];
-    
-    NSLog(@" %@ and %@", doubleString, string1);
-    NSLog(@"d %f", d);
-    NSLog(@"%@", doubleString);
-    
-    //    and
-    if (intI = !1) {
-        NSLog(@"yes");
-    }
-    
-
-    //    or
-    else if ([string isEqual:@"test"] || [string isEqual:@"test"] ) {
-        NSLog(@"no");
-    }
-    
-    else {
-        NSLog(@"nothing");
-    }
     
 }
 
