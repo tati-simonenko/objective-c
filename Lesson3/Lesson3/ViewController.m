@@ -18,6 +18,9 @@
     [super viewDidLoad];
     
     NSString * string = @"text";
+    NSString * string1 = [string substringFromIndex:3];
+    
+    NSLog(@"string %@ string %@", string, string1);
     
 }
 
