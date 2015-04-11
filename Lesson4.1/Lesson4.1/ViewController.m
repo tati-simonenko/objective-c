@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -71,8 +72,7 @@
     
     NSLog(@"self.arrayBase %@", self.arrayBase);
     
-    UILabel * label = [[UILabel alloc] init];
-    label.text = @"Привет";
+    
     
     
     
@@ -123,7 +123,14 @@
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    NSLog(@"IndexPath %i", indexPath.row);
+    
+    
 }
+
+
+
+
 
 
 @end
