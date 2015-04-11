@@ -123,6 +123,11 @@
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    DetailViewController * detail = [self.storyboard
+                                     instantiateViewControllerWithIdentifier:@"detail"];
+    
+    [self.navigationController pushViewController:detail animated:YES];
+    
     NSLog(@"IndexPath %i", indexPath.row);
     
     

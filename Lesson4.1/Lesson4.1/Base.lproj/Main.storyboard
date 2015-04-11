@@ -39,9 +39,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="qys-Ba-kew" kind="show" id="mk4-Qg-y9h"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -61,7 +58,7 @@
         <!--Detail View Controller-->
         <scene sceneID="wl3-Rv-PI2">
             <objects>
-                <viewController id="qys-Ba-kew" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detail" id="qys-Ba-kew" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wXr-VB-yzs"/>
                         <viewControllerLayoutGuide type="bottom" id="rxf-iv-VRr"/>
