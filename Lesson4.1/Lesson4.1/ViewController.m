@@ -24,8 +24,12 @@
     [super viewDidLoad];
     
     
-    NSString * stringAmount = @"245,4565,453,735,297,4721,849";
-    NSString * stringCharacters = @"Разумных,Ленивых,Упорных,Яростных,Серьезных,Трагических,Благоразумных";
+    NSString * stringAmount = @"245,4565,453";
+    NSString * stringCharacters = @"Разумных,Ленивых,Упорных";
+    
+    NSString * stringCharacterRational = @"Один вдруг поперхнулся, и их осталось девять";
+    NSString * stringCharacterLazy = @"Один не смог проснуться, и их осталось восемь";
+    NSString * stringCharacterPertinacious = @"Один не возвратился, и их осталось семь";
     
     self.arrayBase = [NSMutableArray array];
     
@@ -35,15 +39,41 @@
     
     for (int i = 0; i < self.arrayAmount.count; i++) {
         
-        NSDictionary * dict = [[NSDictionary alloc] initWithObjectsAndKeys:
-                               [self.arrayAmount objectAtIndex:i], @"amount",
-                               [self.arrayCharacters objectAtIndex:i], @"character", nil];
+        NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
+        [dict setObject:[self.arrayAmount objectAtIndex:i] forKey:@"amount"];
+        [dict setObject:[self.arrayCharacters objectAtIndex:i] forKey:@"character"];
+        
+        NSString * value = [self.arrayCharacters objectAtIndex:i];
+        
+        if ([value isEqualToString:@"Разумных"]) {
+            
+            [dict setObject:stringCharacterRational forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Ленивых"]) {
+            
+            [dict setObject:stringCharacterLazy forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Упорных"]) {
+            
+            [dict setObject:stringCharacterPertinacious forKey:@"descr"];
+            
+        }
+
+            
         
         [self.arrayBase addObject:dict];
         
     }
     
     NSLog(@"self.arrayBase %@", self.arrayBase);
+    
+    UILabel * label = [[UILabel alloc] init];
+    label.text = @"Привет";
+    
     
     
     
