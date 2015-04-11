@@ -129,10 +129,11 @@
     
     detail.string_mainValue = [dict objectForKey:@"amount"];
     detail.string_Price = [dict objectForKey:@"character"];
+    detail.string_Discr = [dict objectForKey:@"descr"];
     
     [self.navigationController pushViewController:detail animated:YES];
     
-    NSLog(@"IndexPath %i", indexPath.row);
+//    NSLog(@"IndexPath %i", indexPath.row);
     
     
 }

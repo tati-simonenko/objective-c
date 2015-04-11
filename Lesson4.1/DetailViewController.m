@@ -18,8 +18,29 @@
     [super viewDidLoad];
     
     self.label_mainValue.text = self.string_mainValue;
-    self.label_Price.text = self.string_Price;
     self.textView_Discr.text = self.string_Discr;
+    self.label_Price.text = [NSString stringWithFormat:@"Каких - %@ очень",self.string_Price];
+    
+    NSString * format_PNG = @"png";
+    NSString * format_JPG = @"jpg";
+    UIImage * image = [[UIImage alloc]init];
+    
+    if ([self.string_mainValue isEqualToString:@"Разумных"]) {
+        
+        image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_PNG]];
+        
+    }
+    
+    else {
+        
+        image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_JPG]];
+        
+    }
+                 
+    
+//    UIImage * image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", self.string_mainValue]];
+    
+    self.imageView_DetailItem.image = image;
 
 
 }
