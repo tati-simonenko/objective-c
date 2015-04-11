@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.label_mainValue.text = self.string_mainValue;
+    self.label_Price.text = self.string_Price;
+    self.textView_Discr.text = self.string_Discr;
 
 
 }

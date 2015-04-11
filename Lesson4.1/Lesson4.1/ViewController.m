@@ -123,8 +123,12 @@
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    DetailViewController * detail = [self.storyboard
-                                     instantiateViewControllerWithIdentifier:@"detail"];
+    DetailViewController * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    
+    NSDictionary * dict = [self.arrayBase objectAtIndex:indexPath.row];
+    
+    detail.string_mainValue = [dict objectForKey:@"amount"];
+    detail.string_Price = [dict objectForKey:@"character"];
     
     [self.navigationController pushViewController:detail animated:YES];
     
