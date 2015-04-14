@@ -120,7 +120,7 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     DetailViewController * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"detail"];

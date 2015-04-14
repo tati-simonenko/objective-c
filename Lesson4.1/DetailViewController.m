@@ -25,15 +25,19 @@
     NSString * format_JPG = @"jpg";
     UIImage * image = [[UIImage alloc]init];
     
+    NSLog(@"%@ string_Discr", image);
+    
     if ([self.string_mainValue isEqualToString:@"Разумных"]) {
         
         image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_PNG]];
-        
+        NSLog(@"%@ Разумных", [NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_PNG]);
+
     }
     
     else {
         
         image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_JPG]];
+        
         
     }
                  
@@ -41,6 +45,8 @@
 //    UIImage * image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", self.string_mainValue]];
     
     self.imageView_DetailItem.image = image;
+    
+    
 
 
 }
