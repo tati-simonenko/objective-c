@@ -17,34 +17,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.label_mainValue.text = self.string_mainValue;
+    self.label_mainValue.text = [NSString stringWithFormat:@"Каких - %@ очень",self.string_mainValue];
     self.textView_Discr.text = self.string_Discr;
-    self.label_Price.text = [NSString stringWithFormat:@"Каких - %@ очень",self.string_Price];
-    
-    NSString * format_PNG = @"png";
-    NSString * format_JPG = @"jpg";
-    UIImage * image = [[UIImage alloc]init];
-    
-    NSLog(@"%@ string_Discr", image);
-    
-    if ([self.string_mainValue isEqualToString:@"Разумных"]) {
-        
-        image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_PNG]];
-        NSLog(@"%@ Разумных", [NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_PNG]);
+    self.label_Price.text = [NSString stringWithFormat:@"%@ штук",self.string_Price];
 
-    }
     
-    else {
-        
-        image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_JPG]];
-        
-        
-    }
-                 
+//    NSString * format_PNG = @"png";
+//    NSString * format_JPG = @"jpg";
+//    UIImage * image = [[UIImage alloc]init];
+//    
+//    NSLog(@"%@ string_Discr", image);
+//    
+//    if ([self.string_mainValue isEqualToString:@"Разумных"]) {
+//        
+//        image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_PNG]];
+//        NSLog(@"%@ Разумных", [NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_PNG]);
+//
+//    }
+//    
+//    else {
+//        
+//        image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", self.string_mainValue, format_JPG]];
+//        
+//        
+//    }
+    
     
 //    UIImage * image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", self.string_mainValue]];
     
-    self.imageView_DetailItem.image = image;
+    self.imageView_DetailItem.image = self.image;
     
     
 

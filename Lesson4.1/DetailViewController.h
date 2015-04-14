@@ -14,6 +14,8 @@
 @property (strong, nonatomic) NSString *string_Price;
 @property (strong, nonatomic) NSString *string_Discr;
 
+@property (strong, nonatomic) UIImage *image;
+
 
 @property (strong, nonatomic) IBOutlet UITextField *label_mainValue;
 @property (strong, nonatomic) IBOutlet UILabel *label_Price;

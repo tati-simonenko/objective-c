@@ -127,9 +127,28 @@
     
     NSDictionary * dict = [self.arrayBase objectAtIndex:indexPath.row];
     
-    detail.string_mainValue = [dict objectForKey:@"amount"];
-    detail.string_Price = [dict objectForKey:@"character"];
+    NSString * format_PNG = @"png";
+    NSString * format_JPG = @"jpg";
+    UIImage * image = [UIImage imageNamed:@"Разумных.png"];
+    
+    
+    if ([[dict objectForKey:@"character"] isEqualToString:@"Разумных"]) {
+        
+        image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", [dict objectForKey:@"character"], format_PNG]];
+        
+    }
+    
+    else {
+        
+        image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.%@", [dict objectForKey:@"character"], format_JPG]];
+        
+        
+    }
+    
+    detail.string_mainValue = [dict objectForKey:@"character"];
+    detail.string_Price = [dict objectForKey:@"amount"];
     detail.string_Discr = [dict objectForKey:@"descr"];
+    detail.image = image;
     
     [self.navigationController pushViewController:detail animated:YES];
     
