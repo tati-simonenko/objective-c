@@ -25,12 +25,20 @@
     [super viewDidLoad];
     
     
-    NSString * stringAmount = @"245,4565,453";
-    NSString * stringCharacters = @"Разумных,Ленивых,Упорных";
+    NSString * stringAmount = @"245,5565,453,65,3,234,15,45,6777,54.544";
+    NSString * stringCharacters = @"Разумных,Ленивых,Упорных,Серьезных,Умных,Веселых,Милых,Развязных,Мелочных,Забавных,Глупых";
     
-    NSString * stringCharacterRational = @"Один вдруг поперхнулся, и их осталось девять";
-    NSString * stringCharacterLazy = @"Один не смог проснуться, и их осталось восемь";
-    NSString * stringCharacterPertinacious = @"Один не возвратился, и их осталось семь";
+    NSString * stringCharacterRational = @"Эники-бэники ели вареники, Драники, финики, кексы и пряники";
+    NSString * stringCharacterLazy = @"Косой Пикассо косо косил откос косой покасой.";
+    NSString * stringCharacterPertinacious = @"Козёл-мукомол,кому муку молол,кому не молол?";
+    NSString * stringCharacterSerious = @"Шишкосушитель Сашка сушил шишки на шишкосушке";
+    NSString * stringCharacterSmart = @"Премированный преемник премьера - пример не премированному преемнику премьера";
+    NSString * stringCharacterFunny = @"На работе мы работали перерабатывали разработанные разработки по перерабатыванию разных разработанных разработок";
+    NSString * stringCharacterCute = @"Тараторки на базаре тараторят каждый вторник, из-за этого в Торонто улетает Торотор";
+    NSString * stringCharacterCheeky = @"Журналистов не жалеют за жуткое желание прижучить живое жареное жаргоном за жабры, живо зажав жилу жизни жуликоватой жестью";
+    NSString * stringCharacterPetty = @"Установщик в установленные сроки установил установку";
+    NSString * stringCharacterComic = @"Рифмует рифмач рифмоплёта, не зарифмует, рифмуя, не перерифмует, рифмуя рифмача, рифмоплёт, нет рифмо - ритма без ритма рифмы";
+    NSString * stringCharacterStupid = @"Астронавт Армстронг принарядился на космодроме в оранжевый скафандр";
     
     self.arrayBase = [NSMutableArray array];
     
@@ -61,6 +69,54 @@
         else if ([value isEqualToString:@"Упорных"]) {
             
             [dict setObject:stringCharacterPertinacious forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Серьезных"]) {
+            
+            [dict setObject:stringCharacterSerious forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Умных"]) {
+            
+            [dict setObject:stringCharacterSmart forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Веселых"]) {
+            
+            [dict setObject:stringCharacterFunny forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Милых"]) {
+            
+            [dict setObject:stringCharacterCute forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Развязных"]) {
+            
+            [dict setObject:stringCharacterCheeky forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Мелочных"]) {
+            
+            [dict setObject:stringCharacterPetty forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Забавных"]) {
+            
+            [dict setObject:stringCharacterComic forKey:@"descr"];
+            
+        }
+        
+        else if ([value isEqualToString:@"Глупых"]) {
+            
+            [dict setObject:stringCharacterStupid forKey:@"descr"];
             
         }
 

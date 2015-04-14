@@ -12,6 +12,14 @@
 		1366DF8D1AD8F102001BEB65 /* Разумных.png in Resources */ = {isa = PBXBuildFile; fileRef = 1366DF8A1AD8F102001BEB65 /* Разумных.png */; };
 		1366DF8E1AD8F102001BEB65 /* Ленивых.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1366DF8B1AD8F102001BEB65 /* Ленивых.jpg */; };
 		1366DF8F1AD8F102001BEB65 /* Упорных.png in Resources */ = {isa = PBXBuildFile; fileRef = 1366DF8C1AD8F102001BEB65 /* Упорных.png */; };
+		13AB6A601ADD90F900E6D6CA /* Серьезных.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A581ADD90F900E6D6CA /* Серьезных.jpg */; };
+		13AB6A611ADD90F900E6D6CA /* Умных.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A591ADD90F900E6D6CA /* Умных.jpg */; };
+		13AB6A621ADD90F900E6D6CA /* Веселых.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5A1ADD90F900E6D6CA /* Веселых.jpg */; };
+		13AB6A631ADD90F900E6D6CA /* Милых.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5B1ADD90F900E6D6CA /* Милых.jpg */; };
+		13AB6A641ADD90F900E6D6CA /* Развязных.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5C1ADD90F900E6D6CA /* Развязных.jpg */; };
+		13AB6A651ADD90F900E6D6CA /* Мелочных.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5D1ADD90F900E6D6CA /* Мелочных.jpg */; };
+		13AB6A661ADD90F900E6D6CA /* Забавных.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5E1ADD90F900E6D6CA /* Забавных.jpg */; };
+		13AB6A671ADD90F900E6D6CA /* Глупых.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5F1ADD90F900E6D6CA /* Глупых.jpg */; };
 		13C76FDD1AD8611000CAACBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C76FDC1AD8611000CAACBC /* main.m */; };
 		13C76FE01AD8611000CAACBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C76FDF1AD8611000CAACBC /* AppDelegate.m */; };
 		13C76FE31AD8611000CAACBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C76FE21AD8611000CAACBC /* ViewController.m */; };
@@ -39,6 +47,14 @@
 		1366DF8A1AD8F102001BEB65 /* Разумных.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Разумных.png"; sourceTree = "<group>"; };
 		1366DF8B1AD8F102001BEB65 /* Ленивых.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ленивых.jpg"; sourceTree = "<group>"; };
 		1366DF8C1AD8F102001BEB65 /* Упорных.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Упорных.png"; sourceTree = "<group>"; };
+		13AB6A581ADD90F900E6D6CA /* Серьезных.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Серьезных.jpg"; sourceTree = "<group>"; };
+		13AB6A591ADD90F900E6D6CA /* Умных.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Умных.jpg"; sourceTree = "<group>"; };
+		13AB6A5A1ADD90F900E6D6CA /* Веселых.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Веселых.jpg"; sourceTree = "<group>"; };
+		13AB6A5B1ADD90F900E6D6CA /* Милых.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Милых.jpg"; sourceTree = "<group>"; };
+		13AB6A5C1ADD90F900E6D6CA /* Развязных.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Развязных.jpg"; sourceTree = "<group>"; };
+		13AB6A5D1ADD90F900E6D6CA /* Мелочных.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Мелочных.jpg"; sourceTree = "<group>"; };
+		13AB6A5E1ADD90F900E6D6CA /* Забавных.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Забавных.jpg"; sourceTree = "<group>"; };
+		13AB6A5F1ADD90F900E6D6CA /* Глупых.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Глупых.jpg"; sourceTree = "<group>"; };
 		13C76FD71AD8611000CAACBC /* Lesson4.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson4.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C76FDB1AD8611000CAACBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C76FDC1AD8611000CAACBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +94,14 @@
 				1366DF8A1AD8F102001BEB65 /* Разумных.png */,
 				1366DF8B1AD8F102001BEB65 /* Ленивых.jpg */,
 				1366DF8C1AD8F102001BEB65 /* Упорных.png */,
+				13AB6A581ADD90F900E6D6CA /* Серьезных.jpg */,
+				13AB6A591ADD90F900E6D6CA /* Умных.jpg */,
+				13AB6A5A1ADD90F900E6D6CA /* Веселых.jpg */,
+				13AB6A5B1ADD90F900E6D6CA /* Милых.jpg */,
+				13AB6A5C1ADD90F900E6D6CA /* Развязных.jpg */,
+				13AB6A5D1ADD90F900E6D6CA /* Мелочных.jpg */,
+				13AB6A5E1ADD90F900E6D6CA /* Забавных.jpg */,
+				13AB6A5F1ADD90F900E6D6CA /* Глупых.jpg */,
 				1366DF871AD8E30C001BEB65 /* DetailViewController.h */,
 				1366DF881AD8E30C001BEB65 /* DetailViewController.m */,
 			);
@@ -227,11 +251,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C76FE61AD8611000CAACBC /* Main.storyboard in Resources */,
+				13AB6A601ADD90F900E6D6CA /* Серьезных.jpg in Resources */,
 				13C76FEB1AD8611000CAACBC /* LaunchScreen.xib in Resources */,
 				13C76FE81AD8611000CAACBC /* Images.xcassets in Resources */,
+				13AB6A671ADD90F900E6D6CA /* Глупых.jpg in Resources */,
+				13AB6A621ADD90F900E6D6CA /* Веселых.jpg in Resources */,
 				1366DF8D1AD8F102001BEB65 /* Разумных.png in Resources */,
+				13AB6A651ADD90F900E6D6CA /* Мелочных.jpg in Resources */,
+				13AB6A641ADD90F900E6D6CA /* Развязных.jpg in Resources */,
 				1366DF8E1AD8F102001BEB65 /* Ленивых.jpg in Resources */,
 				1366DF8F1AD8F102001BEB65 /* Упорных.png in Resources */,
+				13AB6A631ADD90F900E6D6CA /* Милых.jpg in Resources */,
+				13AB6A611ADD90F900E6D6CA /* Умных.jpg in Resources */,
+				13AB6A661ADD90F900E6D6CA /* Забавных.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
