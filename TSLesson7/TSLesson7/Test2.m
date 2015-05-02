@@ -1,0 +1,13 @@
+//
+//  Test2.m
+//  TSLesson7
+//
+//  Created by T on 02.05.15.
+//  Copyright (c) 2015 T. All rights reserved.
+//
+
+#import "Test2.h"
+
+@implementation Test2
+
+@end

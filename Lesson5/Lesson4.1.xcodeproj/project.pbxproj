@@ -20,6 +20,7 @@
 		13AB6A651ADD90F900E6D6CA /* Мелочных.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5D1ADD90F900E6D6CA /* Мелочных.jpg */; };
 		13AB6A661ADD90F900E6D6CA /* Забавных.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5E1ADD90F900E6D6CA /* Забавных.jpg */; };
 		13AB6A671ADD90F900E6D6CA /* Глупых.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AB6A5F1ADD90F900E6D6CA /* Глупых.jpg */; };
+		13AB6A6B1ADEC9C600E6D6CA /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AB6A6A1ADEC9C600E6D6CA /* CustomTableViewCell.m */; };
 		13C76FDD1AD8611000CAACBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C76FDC1AD8611000CAACBC /* main.m */; };
 		13C76FE01AD8611000CAACBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C76FDF1AD8611000CAACBC /* AppDelegate.m */; };
 		13C76FE31AD8611000CAACBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C76FE21AD8611000CAACBC /* ViewController.m */; };
@@ -55,6 +56,8 @@
 		13AB6A5D1ADD90F900E6D6CA /* Мелочных.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Мелочных.jpg"; sourceTree = "<group>"; };
 		13AB6A5E1ADD90F900E6D6CA /* Забавных.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Забавных.jpg"; sourceTree = "<group>"; };
 		13AB6A5F1ADD90F900E6D6CA /* Глупых.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Глупых.jpg"; sourceTree = "<group>"; };
+		13AB6A691ADEC9C600E6D6CA /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		13AB6A6A1ADEC9C600E6D6CA /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		13C76FD71AD8611000CAACBC /* Lesson4.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson4.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C76FDB1AD8611000CAACBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C76FDC1AD8611000CAACBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -108,6 +111,15 @@
 			name = DetailView;
 			sourceTree = "<group>";
 		};
+		13AB6A681ADEC96000E6D6CA /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				13AB6A691ADEC9C600E6D6CA /* CustomTableViewCell.h */,
+				13AB6A6A1ADEC9C600E6D6CA /* CustomTableViewCell.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
 		13C76FCE1AD8610F00CAACBC = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 		13C76FD91AD8611000CAACBC /* Lesson4.1 */ = {
 			isa = PBXGroup;
 			children = (
+				13AB6A681ADEC96000E6D6CA /* CustomCell */,
 				13C76FDE1AD8611000CAACBC /* AppDelegate.h */,
 				13C76FDF1AD8611000CAACBC /* AppDelegate.m */,
 				13C76FE11AD8611000CAACBC /* ViewController.h */,
@@ -283,6 +296,7 @@
 			files = (
 				1366DF891AD8E30C001BEB65 /* DetailViewController.m in Sources */,
 				1366DF851AD86600001BEB65 /* Unnamed.m in Sources */,
+				13AB6A6B1ADEC9C600E6D6CA /* CustomTableViewCell.m in Sources */,
 				13C76FE31AD8611000CAACBC /* ViewController.m in Sources */,
 				13C76FE01AD8611000CAACBC /* AppDelegate.m in Sources */,
 				13C76FDD1AD8611000CAACBC /* main.m in Sources */,
