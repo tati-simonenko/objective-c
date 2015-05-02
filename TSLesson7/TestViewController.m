@@ -19,15 +19,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor colorWithRed:57/255 green:9/255 blue:31/255 alpha:1.0];
     [self performSelector:@selector(set_switch) withObject:nil afterDelay:1.0f];
-    [self performSelector:@selector(changeColor) withObject:nil afterDelay:3.0f];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notif_method) name:TEST_NOTIF object:nil];
+    
+    
+    - (void) notif_method {
+        
+    }
+    
+//    [self performSelector:@selector(changeColor) withObject:nil afterDelay:3.0f];
     // Do any additional setup after loading the view.
 }
 
-- (void) changeColor {
-    self.view.backgroundColor = [UIColor redColor];
-}
+//- (void) changeColor {
+//    self.view.backgroundColor = [UIColor redColor];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
