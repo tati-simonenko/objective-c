@@ -10,4 +10,7 @@
 
 @interface TestViewController : UIViewController
 
+- (void) notif_method;
+- (IBAction)swithcOne:(id)sender;
+
 @end

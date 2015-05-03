@@ -7,6 +7,7 @@
 //
 
 #import "TestViewController.h"
+#import "AppConstants.h"
 
 @interface TestViewController ()
 - (IBAction)back:(id)sender;
@@ -26,9 +27,22 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notif_method) name:TEST_NOTIF object:nil];
     
     
-    - (void) notif_method {
-        
-    }
+
+ 
+    
+//    - (IBAction)switchOne:(id)sender {
+//        UISwitch = switchUI = (id)sender;
+//        
+//        if (switchUI.on) {
+//            NSLog(@"ON");
+//        }
+//        
+//        else {
+//            NSLog(@"OFF");
+//        }
+//        
+//    }
+
     
 //    [self performSelector:@selector(changeColor) withObject:nil afterDelay:3.0f];
     // Do any additional setup after loading the view.
