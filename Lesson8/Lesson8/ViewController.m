@@ -31,6 +31,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void) viewWillAppear:(BOOL)animated {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(show_Notifications) name:@"NewEvent" object:nil];
+    
+}
+
 - (void) show_Notifications {
     
     NSArray * array = [[UIApplication sharedApplication] scheduledLocalNotifications];
@@ -74,8 +81,7 @@
     ToDoDetailViewController * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Detail"];
     detail.isNewEvent = NO;
     detail.string_EventItem = [notif.userInfo objectForKey:@"event"];
-    detail.date_Current_Event = [notif.userInfo objectForKey:@"date_Event"];
-    
+    detail.date_Current_Event = notif.fireDate;
     
     
     

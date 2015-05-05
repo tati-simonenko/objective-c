@@ -78,6 +78,8 @@
     
     NSLog(@"%@", notif);
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NewEvent" object:nil];
+    
     [self.navigationController popViewControllerAnimated:YES];
     
 }
