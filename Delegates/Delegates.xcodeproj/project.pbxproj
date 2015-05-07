@@ -14,6 +14,8 @@
 		13BE3A9B1AF936C80039EB21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BE3A9A1AF936C80039EB21 /* Images.xcassets */; };
 		13BE3A9E1AF936C80039EB21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13BE3A9C1AF936C80039EB21 /* LaunchScreen.xib */; };
 		13BE3AAA1AF936C80039EB21 /* DelegatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3AA91AF936C80039EB21 /* DelegatesTests.m */; };
+		13DD9B231AFC0AD400B66028 /* TSPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DD9B221AFC0AD400B66028 /* TSPatient.m */; };
+		13DD9B261AFC0CF100B66028 /* TSDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DD9B251AFC0CF100B66028 /* TSDoctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		13BE3AA31AF936C80039EB21 /* DelegatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BE3AA81AF936C80039EB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13BE3AA91AF936C80039EB21 /* DelegatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatesTests.m; sourceTree = "<group>"; };
+		13DD9B211AFC0AD400B66028 /* TSPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPatient.h; sourceTree = "<group>"; };
+		13DD9B221AFC0AD400B66028 /* TSPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPatient.m; sourceTree = "<group>"; };
+		13DD9B241AFC0CF100B66028 /* TSDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDoctor.h; sourceTree = "<group>"; };
+		13DD9B251AFC0CF100B66028 /* TSDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDoctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 		13BE3A811AF936C80039EB21 = {
 			isa = PBXGroup;
 			children = (
+				13DD9B241AFC0CF100B66028 /* TSDoctor.h */,
+				13DD9B251AFC0CF100B66028 /* TSDoctor.m */,
+				13DD9B211AFC0AD400B66028 /* TSPatient.h */,
+				13DD9B221AFC0AD400B66028 /* TSPatient.m */,
 				13BE3A8C1AF936C80039EB21 /* Delegates */,
 				13BE3AA61AF936C80039EB21 /* DelegatesTests */,
 				13BE3A8B1AF936C80039EB21 /* Products */,
@@ -221,7 +231,9 @@
 			files = (
 				13BE3A961AF936C80039EB21 /* ViewController.m in Sources */,
 				13BE3A931AF936C80039EB21 /* AppDelegate.m in Sources */,
+				13DD9B231AFC0AD400B66028 /* TSPatient.m in Sources */,
 				13BE3A901AF936C80039EB21 /* main.m in Sources */,
+				13DD9B261AFC0CF100B66028 /* TSDoctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				13BE3AAF1AF936C80039EB21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13BE3AB01AF936C80039EB21 /* Build configuration list for PBXNativeTarget "DelegatesTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				13BE3AB21AF936C80039EB21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

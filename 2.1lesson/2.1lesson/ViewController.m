@@ -27,7 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    isYes = YES;
+//    isYes = YES;
+    isColorChanged = NO;
     [self setView];
 }
 
@@ -66,7 +67,7 @@
 
 - (IBAction)action_YES:(id)sender {
     
-    if (isYes) {
+    if (!isColorChanged) {
         
         Animations * anim =[Animations new];
         [anim change_Change_Box:self.view_check_YES Color:[UIColor grayColor]];
@@ -78,31 +79,68 @@
 //        self.view_check_YES.layer.backgroundColor= [UIColor grayColor].CGColor;
 //        self.view_check_NO.layer.backgroundColor= [UIColor whiteColor].CGColor;
         
+        isColorChanged = YES;
         isYes = YES;
         
     }
     
-    else {
+    else if (!isYes) {
+        
+        Animations * anim =[Animations new];
+        [anim change_Change_Box:self.view_check_YES Color:[UIColor grayColor]];
+        [anim change_Change_Box:self.view_check_NO Color:[UIColor whiteColor]];
+        
+        isYes = NO;
+        
+    }
+    
+   
+    
+}
+
+- (IBAction)action_NO:(id)sender {
+    
+    if (!isColorChanged) {
         
         Animations * anim =[Animations new];
         [anim change_Change_Box:self.view_check_YES Color:[UIColor whiteColor]];
         [anim change_Change_Box:self.view_check_NO Color:[UIColor grayColor]];
         
-//        [Animations change_Change_Box:self.view_check_YES Color:[UIColor whiteColor]];
-//        [Animations change_Change_Box:self.view_check_NO Color:[UIColor grayColor]];
+        //        [Animations change_Change_Box:self.view_check_YES Color:[UIColor whiteColor]];
+        //        [Animations change_Change_Box:self.view_check_NO Color:[UIColor grayColor]];
         
-//        self.view_check_NO.layer.backgroundColor= [UIColor whiteColor].CGColor;
-//        self.view_check_NO.layer.backgroundColor= [UIColor grayColor].CGColor;
+        //        self.view_check_NO.layer.backgroundColor= [UIColor whiteColor].CGColor;
+        //        self.view_check_NO.layer.backgroundColor= [UIColor grayColor].CGColor;
         
+        isColorChanged = YES;
+        isYes = NO;
+        
+        
+    }
+    
+    else if (!isYes) {
+        
+        Animations * anim =[Animations new];
+        [anim change_Change_Box:self.view_check_YES Color:[UIColor whiteColor]];
+        [anim change_Change_Box:self.view_check_NO Color:[UIColor grayColor]];
+
         isYes = NO;
         
     }
     
 }
 
-- (IBAction)action_NO:(id)sender {
-    
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end
