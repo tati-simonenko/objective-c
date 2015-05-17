@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) UIView * testView;
 @end
 
 @implementation ViewController
@@ -17,15 +17,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView * view1 = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 100, 100)];
-    view1.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view1];
+    int cellCount, cellSize;
     
+    CGFloat blackBoard = CGRectGetWidth(self.view.frame);
     
-    UIView * view2 = [[UIView alloc] initWithFrame:CGRectMake(20, 80, 100, 10)];
-    view2.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.8];
-    [self.view addSubview:view2];
+    cellCount = 8;
+    cellSize = 30;
     
+    UIView * chessBoard = [[UIView alloc] initWithFrame:CGRectMake(cellSize, cellSize, cellSize*cellCount, cellSize*cellCount)];
+    
+    chessBoard.backgroundColor = [UIColor lightGrayColor];
+    chessBoard.autoresizingMask =   UIViewAutoresizingFlexibleTopMargin |
+                                    UIViewAutoresizingFlexibleRightMargin |
+                                    UIViewAutoresizingFlexibleBottomMargin |
+                                    UIViewAutoresizingFlexibleLeftMargin;
+    
+    [self.view addSubview:chessBoard];
+    
+    for (int y = 0; y < cellCount; y++) {
+        
+        for (int x = 0; x < cellCount; x++) {
+            
+            if (x%2 == y%2) {
+                
+                UIView * square = [[UIView alloc] initWithFrame:CGRectMake(y*cellSize, x*cellSize, cellSize, cellSize)];
+                [square setBackgroundColor: [UIColor blackColor]];
+                
+                [chessBoard addSubview:square];
+                
+            }
+            
+        }
+        
+    }
     
 
 }
