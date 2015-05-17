@@ -42,10 +42,10 @@
 		13BE3AA31AF936C80039EB21 /* DelegatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BE3AA81AF936C80039EB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13BE3AA91AF936C80039EB21 /* DelegatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatesTests.m; sourceTree = "<group>"; };
-		13DD9B211AFC0AD400B66028 /* TSPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPatient.h; sourceTree = "<group>"; };
-		13DD9B221AFC0AD400B66028 /* TSPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPatient.m; sourceTree = "<group>"; };
-		13DD9B241AFC0CF100B66028 /* TSDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDoctor.h; sourceTree = "<group>"; };
-		13DD9B251AFC0CF100B66028 /* TSDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDoctor.m; sourceTree = "<group>"; };
+		13DD9B211AFC0AD400B66028 /* TSPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSPatient.h; path = ../TSPatient.h; sourceTree = "<group>"; };
+		13DD9B221AFC0AD400B66028 /* TSPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSPatient.m; path = ../TSPatient.m; sourceTree = "<group>"; };
+		13DD9B241AFC0CF100B66028 /* TSDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSDoctor.h; path = ../TSDoctor.h; sourceTree = "<group>"; };
+		13DD9B251AFC0CF100B66028 /* TSDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSDoctor.m; path = ../TSDoctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +69,6 @@
 		13BE3A811AF936C80039EB21 = {
 			isa = PBXGroup;
 			children = (
-				13DD9B241AFC0CF100B66028 /* TSDoctor.h */,
-				13DD9B251AFC0CF100B66028 /* TSDoctor.m */,
-				13DD9B211AFC0AD400B66028 /* TSPatient.h */,
-				13DD9B221AFC0AD400B66028 /* TSPatient.m */,
 				13BE3A8C1AF936C80039EB21 /* Delegates */,
 				13BE3AA61AF936C80039EB21 /* DelegatesTests */,
 				13BE3A8B1AF936C80039EB21 /* Products */,
@@ -91,6 +87,10 @@
 		13BE3A8C1AF936C80039EB21 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				13DD9B241AFC0CF100B66028 /* TSDoctor.h */,
+				13DD9B251AFC0CF100B66028 /* TSDoctor.m */,
+				13DD9B211AFC0AD400B66028 /* TSPatient.h */,
+				13DD9B221AFC0AD400B66028 /* TSPatient.m */,
 				13BE3A911AF936C80039EB21 /* AppDelegate.h */,
 				13BE3A921AF936C80039EB21 /* AppDelegate.m */,
 				13BE3A941AF936C80039EB21 /* ViewController.h */,

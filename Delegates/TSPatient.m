@@ -16,10 +16,12 @@
 
 - (void) takePill {
     
+    NSLog(@"%@ takes pill", self.name);
+    
 }
 
 - (void) makeShot {
-    
+    NSLog(@"%@ make shot", self.name);
 }
 
 @end

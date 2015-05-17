@@ -1,14 +1,12 @@
 //
 //  AppDelegate.m
-//  Delegates
+//  ViewControllers
 //
-//  Created by T on 05.05.15.
+//  Created by T on 15.05.15.
 //  Copyright (c) 2015 T. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "TSPatient.h"
-#import "TSDoctor.h"
 
 @interface AppDelegate ()
 
@@ -18,25 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    ASPatient* patient1 = [[ASPatient alloc] init];
-    patient1.name = @"Vova";
-    patient1.temperature = 36.6f;
-    
-    ASPatient* patient2 = [[ASPatient alloc] init];
-    patient2.name = @"Petya";
-    patient2.temperature = 40.2f;
-    
-    ASPatient* patient3 = [[ASPatient alloc] init];
-    patient3.name = @"Dima";
-    patient3.temperature = 37.1f;
-    
-    
-    
-    
-    
-    
-    
+    // Override point for customization after application launch.
     return YES;
 }
 

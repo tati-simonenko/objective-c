@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TSPatient.h"
 
-@interface TSDoctor : NSObject
+@interface TSDoctor : NSObject <TSPatientDelegate>
 
 @end
+

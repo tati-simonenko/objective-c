@@ -10,4 +10,12 @@
 
 @implementation TSDoctor
 
+- (void) patienceFelldBad: (NSString *) patient {
+    NSLog(@"%@", patient.name);
+}
+
+- (void) patient: (NSString *) patient hasQuestion: (NSString *) question {
+    
+}
+
 @end

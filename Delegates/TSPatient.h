@@ -8,16 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol TSPatientDelegate;
+@protocol ASPatientDelegate;
 
-@interface TSPatient : NSObject
+@interface ASPatient : NSObject
 
-
-
-@property (strong, nonatomic) NSString * name;
-@property (assign, nonatomic) float * temperature;
-@property (weak, nonatomic) id <TSPatientDelegate> delegate;
-
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) CGFloat temperature;
+@property (weak, nonatomic) id <ASPatientDelegate> delegate;
 
 - (BOOL) howAreYou;
 - (void) takePill;
@@ -25,9 +22,9 @@
 
 @end
 
-@protocol TSPatientDelegate <NSObject>
-
-- (void) patienceFelldBad: (NSString *) patient;
-- (void) patient: (NSString *) patient hasQuestion: (NSString *) question;
+@protocol ASPatientDelegate
+@required
+- (void) patientFeelsBad:(ASPatient*) patient;
+- (void) patient:(ASPatient*) patient hasQuestion:(NSString*) question;
 
 @end
