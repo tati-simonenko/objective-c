@@ -7,10 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
-
+@property (nonatomic, strong) RootViewController * viewController;
 
 @end
 
@@ -18,7 +19,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.viewController = [[RootViewController alloc] init];
+    self.window.rootViewController = self.viewController;
+    
+    
+    
+    
+    
     return YES;
 }
 
