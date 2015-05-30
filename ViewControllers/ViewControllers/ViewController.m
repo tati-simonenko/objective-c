@@ -19,8 +19,6 @@
     
     int cellCount, cellSize;
     
-    CGFloat blackBoard = CGRectGetWidth(self.view.frame);
-    
     cellCount = 8;
     cellSize = 30;
     
